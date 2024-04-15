@@ -1,0 +1,60 @@
+@import "./reset.css";
+@import "./pages/header.css";
+
+:root{
+    --primary-color: #09DA82;
+    --secondary-color: #cfcfcf;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+button{
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.wrapper{
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: var(--primary-color) 2px solid;
+}
+
+.btn-secondary{
+    background-color: #fff;
+    outline: var(--secondary-color) 2px solid;
+    color: #000;
+}
+
+.icon-container{
+    --size: 20px;
+    height: var(--size);
+    width: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 var(--size);
+}
+
+.icon-container > *{
+    height: 100%;
+    width: 100%;
+}
+

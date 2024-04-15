@@ -1,0 +1,40 @@
+nav.main-nav > *{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 20px;
+}
+
+nav.main-nav .menu-list{
+    display: flex;
+    align-items: center;
+}
+
+nav.main-nav .brand-name{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav.main-nav .menu-list .menu-link{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav.main-nav .menu-list.secondary-list{
+    gap: 20px;
+} 
+
+nav.main-nav .menu-list.secondary-list .menu-link{
+    padding: 0
+}
+
+nav.main-nav .menu-list.secondary-list .menu-link button{
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
