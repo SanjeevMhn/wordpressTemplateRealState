@@ -1,0 +1,29 @@
+footer.main-footer{
+    background-color: var(--primary-color);
+    padding: 30px 0;
+}
+
+footer.main-footer > *{
+    display: flex;
+    color: #fff;
+    fill: #fff;
+}
+
+footer.main-footer .brand-info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer.main-footer .contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer.main-footer .socials-list{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}

@@ -11,11 +11,6 @@ nav.main-nav .menu-list{
     align-items: center;
 }
 
-nav.main-nav .brand-name{
-    font-size: 25px;
-    font-weight: 600;
-}
-
 nav.main-nav .menu-list .menu-link{
     display: flex;
     padding: 15px;

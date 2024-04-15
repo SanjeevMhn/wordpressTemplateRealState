@@ -14,7 +14,7 @@
 <body>
     <nav class="main-nav">
         <div class="wrapper">
-            <a href="#" class="brand-name">GharJagga</a>
+            <a href="#" class="brand-name heading-text">GharJagga</a>
             <ul class="menu-list">
                 <li class="menu-item"><a href="#" class="menu-link">House</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Land</a></li>

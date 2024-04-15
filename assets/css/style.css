@@ -1,8 +1,9 @@
 @import "./reset.css";
 @import "./pages/header.css";
+@import "./pages/footer.css";
 
 :root{
-    --primary-color: #09DA82;
+    --primary-color: #0e8252;
     --secondary-color: #cfcfcf;
 }
 
@@ -26,6 +27,20 @@ button{
     cursor: pointer;
 }
 
+.heading-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sub-heading-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.brand-name{
+    display: flex;
+}
+
 .wrapper{
     max-width: 990px;
     margin: 0 auto;
@@ -45,6 +60,14 @@ button{
 
 .icon-container{
     --size: 20px;
+}
+
+.icon-container-md{
+    --size: 28px;
+}
+
+.icon-container,
+.icon-container-md{
     height: var(--size);
     width: var(--size);
     display: flex;
@@ -53,7 +76,8 @@ button{
     flex: 0 0 var(--size);
 }
 
-.icon-container > *{
+.icon-container > *,
+.icon-container-md > *{
     height: 100%;
     width: 100%;
 }
