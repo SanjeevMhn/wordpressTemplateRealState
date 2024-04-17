@@ -1,3 +1,8 @@
+nav.main-nav{
+    background-color: #fff;
+    box-shadow: 0px -5px 8px 5px #c3c3c3;
+}
+
 nav.main-nav > *{
     display: flex;
     align-items: center;
@@ -13,6 +18,7 @@ nav.main-nav .menu-list{
 
 nav.main-nav .menu-list .menu-link{
     display: flex;
+    gap: 8px;
     padding: 15px;
     font-size: 18px;
     font-weight: 500;
@@ -24,11 +30,6 @@ nav.main-nav .menu-list.secondary-list{
 
 nav.main-nav .menu-list.secondary-list .menu-link{
     padding: 0
-}
-
-nav.main-nav .menu-list.secondary-list .menu-link button{
-    padding: 10px;
-    font-size: 16px;
 }
 
 

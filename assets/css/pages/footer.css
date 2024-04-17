@@ -1,12 +1,12 @@
 footer.main-footer{
     background-color: var(--primary-color);
-    padding: 30px 0;
 }
 
 footer.main-footer > *{
     display: flex;
     color: #fff;
     fill: #fff;
+    padding: 30px 20px;
 }
 
 footer.main-footer .brand-info{

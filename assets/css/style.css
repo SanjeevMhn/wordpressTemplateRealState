@@ -15,16 +15,16 @@ a{
 body{
     /* font-family: "Roboto", sans-serif; */
     font-family: "Nunito Sans", sans-serif;
+    background-color: #f3f3f3;
 }
 
 button{
     outline: none;
     border: none;
-    font-weight: 600;
-    border-radius: 10px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ button{
 }
 
 .wrapper{
-    max-width: 990px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -53,14 +53,20 @@ button{
     outline: var(--primary-color) 2px solid;
 }
 
-.btn-secondary{
+.btn-primary-outline{
+    /* background-color: var(--primary-color); */
+    color: var(--primary-color);
+    outline: var(--primary-color) 2px solid;
+}
+
+/* .btn-secondary{
     background-color: #fff;
     outline: var(--secondary-color) 2px solid;
     color: #000;
-}
+} */
 
 .icon-container{
-    --size: 20px;
+    --size: 18px;
 }
 
 .icon-container-md{
@@ -83,3 +89,75 @@ button{
     width: 100%;
 }
 
+.intro-section > *{
+    /* height: calc(100vh - 72px); */
+    padding: 50px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.intro-section .intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-section .intro-text h4{
+    font-size: 24px;
+}
+
+.intro-section .intro-text h2{
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.intro-section .intro-text span{
+    font-size: 18px;
+    max-width: 75%;
+}
+
+.property-btn{
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 100vh;
+    font-weight: 500;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hero-img{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 12px;
+    display: none;
+}
+
+.hero-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 990px){
+    .hero-img{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .hero-img{
+        width: 80%;
+    }
+    .intro-section{
+        gap: 30px;
+    }
+}
