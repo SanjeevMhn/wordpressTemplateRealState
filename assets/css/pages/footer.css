@@ -27,3 +27,7 @@ footer.main-footer .socials-list{
     gap: 12px;
     margin-top: 10px;
 }
+
+footer.main-footer .socials-list .social-link svg{
+    fill: #fff;
+}

@@ -26,6 +26,7 @@ button{
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    background: unset;
 }
 
 .heading-text{
@@ -39,7 +40,8 @@ button{
 }
 
 .brand-name{
-    display: flex;
+    display: inline-block;
+    font-weight: 600;
 }
 
 .wrapper{
@@ -54,9 +56,9 @@ button{
 }
 
 .btn-primary-outline{
-    /* background-color: var(--primary-color); */
     color: var(--primary-color);
     outline: var(--primary-color) 2px solid;
+    backdrop-filter: blur(8px);
 }
 
 /* .btn-secondary{
@@ -90,7 +92,6 @@ button{
 }
 
 .intro-section > *{
-    /* height: calc(100vh - 72px); */
     padding: 50px 30px;
     position: relative;
     display: flex;
@@ -99,30 +100,47 @@ button{
     gap: 20px;
 }
 
+.intro-section > *::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    opacity: 0.67;
+    z-index: -1;
+}
+
 .intro-section .intro-text{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-.intro-section .intro-text h4{
+.intro-section .intro-text h4,
+.intro-section .intro-text h4 > *{
     font-size: 24px;
 }
 
 .intro-section .intro-text h2{
-    font-size: 37px;
+    font-size: 26.5px;
     font-weight: 600;
 }
 
 .intro-section .intro-text span{
-    font-size: 18px;
-    max-width: 75%;
+    font-size: 18px; 
 }
 
 .property-btn{
     padding: 10px 20px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 14.5px;
     border-radius: 100vh;
     font-weight: 500;
 }
@@ -209,7 +227,35 @@ button{
     object-fit: contain;
 }
 
+@media screen and (min-width: 768px) {
+
+    .intro-section .intro-text h4{
+        font-size: 24px;
+    }
+
+    .intro-section .intro-text h2{
+        font-size: 37px;
+    }
+
+    .intro-section .intro-text span{
+        max-width: 75%;
+    }
+
+    .property-btn{
+        font-size: 18px;
+    }
+}
+
 @media screen and (min-width: 990px){
+
+    .intro-section > *{
+        height: auto;
+    }
+
+    .intro-section > *::after{
+        content: none;
+    }
+
     .hero-img{
         display: block;
     }
