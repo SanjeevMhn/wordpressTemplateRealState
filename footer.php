@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer wrapper-container">
     <div class="wrapper">
         <div class="brand-info">
             <a href="#" class="brand-name heading-text">GharJagga</a>
@@ -52,6 +52,7 @@
     </div>
 </footer>
 
+<?php wp_footer(); ?>
 </body>
 
 </html>
