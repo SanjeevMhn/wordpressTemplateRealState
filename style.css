@@ -46,8 +46,25 @@ button{
 }
 
 .brand-name{
-    display: inline-block;
-    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.logo-container{
+    --size: 40px;
+    width: var(--size);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 var(--size);
+}
+
+.logo-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .wrapper{

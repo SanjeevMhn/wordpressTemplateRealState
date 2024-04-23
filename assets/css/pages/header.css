@@ -15,6 +15,15 @@ nav.main-nav > * {
 nav.main-nav .menu-list {
     display: none;
     align-items: center;
+    flex-grow: 1;
+}
+
+nav.main-nav .menu-list .menu-item:nth-child(1){
+    margin-left: auto;
+}
+
+nav.main-nav .menu-list .menu-item:nth-child(5){
+    margin-left: auto;
 }
 
 nav.main-nav .menu-list .menu-link {
@@ -23,6 +32,13 @@ nav.main-nav .menu-list .menu-link {
     padding: 15px;
     font-size: 18px;
     font-weight: 500;
+}
+
+nav.main-nav .menu-list .menu-item.btn-item .menu-link{
+l   color: var(--primary-color);
+    outline: var(--primary-color) 2px solid;
+    backdrop-filter: blur(8px);
+    border-radius: 100vh;
 }
 
 nav.main-nav .menu-list.secondary-list {
