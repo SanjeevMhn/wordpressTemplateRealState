@@ -16,12 +16,14 @@
 		add_theme_support('custom-logo');
 		add_theme_support('post-thumbnails');
 		add_theme_support('custom-background');
+		add_theme_support('widgets');
 	}
 
 	add_action('after_setup_theme','realState_theme_support');
 
 	function realState_enqueue_scripts(){
 		wp_enqueue_style('stylesheet',get_template_directory_uri().'/style.css', array());
+		wp_enqueue_script('new-script',get_template_directory_uri().'/assets/js/app.js',array());
 	}
 
 	add_action('wp_enqueue_scripts', 'realState_enqueue_scripts');

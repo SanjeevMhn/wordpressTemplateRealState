@@ -22,6 +22,7 @@ body{
     /* font-family: "Roboto", sans-serif; */
     font-family: "Nunito Sans", sans-serif;
     background-color: #f3f3f3;
+    position: relative;
 }
 
 button{
@@ -76,10 +77,28 @@ button{
     padding: 15px;
 }
 
+.btn-container{
+    padding: 15px 15px 0!important;
+}
+
+.btn-close{
+    height: 35px; 
+    width: 35px; 
+    border-radius: 50%;
+    padding: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-primary{
     background-color: var(--primary-color);
     color: #fff;
     outline: var(--primary-color) 2px solid;
+}
+
+.btn-primary svg{
+    fill: #fff;
 }
 
 .btn-primary-outline{
@@ -177,6 +196,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: #fff;
 }
 
 .intro-section .intro-text h4,
@@ -190,7 +210,8 @@ button{
 }
 
 .intro-section .intro-text span{
-    font-size: 18px; 
+    font-size: 18.5px; 
+    font-weight: 600;
 }
 
 .property-btn{
@@ -398,5 +419,9 @@ button{
     .intro-section .hero-img{
         width: 50%; 
         right: 30px;
+    }
+
+    .intro-section .intro-text{
+        color: #000;
     }
 }

@@ -26,7 +26,8 @@ nav.main-nav .menu-list .menu-item:nth-child(5){
     margin-left: auto;
 }
 
-nav.main-nav .menu-list .menu-link {
+nav.main-nav .menu-list .menu-link,
+nav.resp-nav .menu-list .menu-link {
     display: flex;
     gap: 8px;
     padding: 15px;
@@ -34,7 +35,8 @@ nav.main-nav .menu-list .menu-link {
     font-weight: 500;
 }
 
-nav.main-nav .menu-list .menu-item.btn-item .menu-link{
+nav.main-nav .menu-list .menu-item.btn-item .menu-link,
+nav.resp-nav .menu-list .menu-item.btn-item .menu-link{
 l   color: var(--primary-color);
     outline: var(--primary-color) 2px solid;
     backdrop-filter: blur(8px);
@@ -47,6 +49,23 @@ nav.main-nav .menu-list.secondary-list {
 
 nav.main-nav .menu-list.secondary-list .menu-link {
     padding: 0
+}
+
+nav.resp-nav{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    max-width: 450px;
+    top: 0;
+    right: -100vh;
+    bottom: 0;
+    background-color: #fff;
+    transition: all 600ms ease-in-out;
+    z-index: 999;
+}
+nav.resp-nav.show{
+    right: 0;
+    box-shadow: -12px 0 20px 20px #00000056;
 }
 
 @media screen and (min-width: 990px) {

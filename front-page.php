@@ -3,8 +3,7 @@
     <div class="wrapper">
         <div class="intro-text">
             <h2>Searching For A Property?</h2>
-            <h4>Find it here at <div class="brand-name">Gharjagga</div>
-            </h4>
+            <h4>Find it here at GharJagga</h4>
             <span>Discover a wide range of properties for sale or rent in your desired location.</span>
             <div class="btn-group">
                 <a href="#" class="btn-primary property-btn">
@@ -14,7 +13,7 @@
         </div>
         <div class="hero-img">
             <?php if(get_background_image()){ ?>
-                <img src="<?php echo get_background_image() ?>" alt="">"
+                <img src="<?php echo get_background_image() ?>" alt="">
             <?php } ?>
         </div>
     </div>
