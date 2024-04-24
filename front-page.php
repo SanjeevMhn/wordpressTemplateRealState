@@ -13,9 +13,12 @@
             </div>
         </div>
         <div class="hero-img">
-            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/hero.jpg" alt="">
+            <?php if(get_background_image()){ ?>
+                <img src="<?php echo get_background_image() ?>" alt="">"
+            <?php } ?>
         </div>
     </div>
+    
 </div>
 <section class="product-list-container wrapper-container">
     <div class="wrapper">

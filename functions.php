@@ -1,9 +1,21 @@
 <?php 
 	
+	$background_defaults = array(
+		'default-color' => '',
+		'default-image' => '',
+		'default-repeat' => '',
+		'default-position-x' => '',
+		'default-attachment' => '',
+		'wp-head-callback' => '_custom_background_cb',
+		'admin-head-callback' => '',
+		'admin-preview-callback' => ''
+	);
+
 	function realState_theme_support(){
 		add_theme_support('title-tag');
 		add_theme_support('custom-logo');
 		add_theme_support('post-thumbnails');
+		add_theme_support('custom-background');
 	}
 
 	add_action('after_setup_theme','realState_theme_support');
@@ -34,4 +46,4 @@
 
 	add_filter('nav_menu_link_attributes', 'realState_add_additional_classes_on_a',1,3);
 
-
+	
