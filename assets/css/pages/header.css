@@ -57,15 +57,25 @@ nav.resp-nav{
     width: 90%;
     max-width: 450px;
     top: 0;
-    right: -100vh;
     bottom: 0;
     background-color: #fff;
-    transition: all 600ms ease-in-out;
     z-index: 999;
+    right: -100vh;
+    display: none;
 }
 nav.resp-nav.show{
-    right: 0;
+    display: block;
     box-shadow: -12px 0 20px 20px #00000056;
+    animation: show 600ms ease-in-out 0s forwards;
+}
+
+@keyframes show{
+    0%{
+        right: -100vh;
+    }
+    100%{
+        right: 0;
+    }
 }
 
 @media screen and (min-width: 990px) {
